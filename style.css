@@ -1,0 +1,64 @@
+body {
+  background: rgb(17 24 39);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subsideary-logo-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.subsideary-logo {
+  height: 50px;
+  margin: 10px;
+  display: block;
+  object-fit: contain;
+  transition: transform 1s; /* Add a smooth transition effect */
+}
+
+.subsideary-logo:hover {
+  transform: scale(1.1); /* Increase the size (adjust as needed) */
+  text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px;
+  animation: pulse 5s infinite alternate; /* Adjust the duration as needed */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.1); /* You can adjust the scaling factor */
+    opacity: 1;
+    text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+}
